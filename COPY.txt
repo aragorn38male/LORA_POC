@@ -1,0 +1,12 @@
+# 1. Copy run_rsa.sh to the correct location, which is:
+/data/data/com.termux/files/home/run_rsa.sh
+
+# 2. Ensure the destination folder exists
+mkdir -p ~/.termux/tasker/
+
+# 3. Copy the script
+cp ~/run_rsa.sh ~/.termux/tasker/
+
+# 4. Re-apply execute permissions (Crucial for the plugin to work)
+chmod +x ~/.termux/tasker/run_rsa.sh
+chmod +x ~/.termux/tasker/rsa_gen
